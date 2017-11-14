@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_day"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:background="#0099ff" />
+
+        <TextView
+            android:id="@+id/tv_line_up_day"
+            android:layout_width="0.5dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="45dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@mipmap/icon_newsflash_day"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="APR\n19"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:background="#0099ff" />
+
+            <TextView
+                android:id="@+id/tv_line_up"
+                android:visibility="gone"
+                android:layout_width="5dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="44dp"
+                android:background="@color/white" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="19dp"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="9dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:drawablePadding="4dp"
+                android:drawableLeft="@mipmap/icon_newsflash_clock"
+                android:background="@drawable/shape_button_address"
+                android:text="12:12"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:paddingLeft="14dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingRight="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="18dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/color_878787"
+                android:text="dfdsfsdfsdfdfsdfjdfjdfjdflsdfsdlfjsfdssssssssssssdf发生大幅度发发送到发送到发送到打发斯蒂芬" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="8dp"
+                android:background="#e9e7e8"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

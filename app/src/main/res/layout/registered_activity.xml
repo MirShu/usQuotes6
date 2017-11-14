@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        style="@style/regist_item_distance"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/register_item_text"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/et_register_phone"
+            style="@style/regist_item_edittext"
+            android:layout_toRightOf="@id/tv_phone"
+            android:hint="请输入手机号"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/bt_ident"
+            style="@style/user_ident" />
+
+    </RelativeLayout>
+
+    <View style="@style/regist_item_line" />
+
+    <RelativeLayout style="@style/regist_item_distance">
+
+        <TextView
+            android:id="@+id/tv_register_code"
+            style="@style/register_item_text"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/regist_item_edittext"
+            android:layout_toRightOf="@id/tv_register_code"
+            android:hint="请输入验证码"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <View style="@style/regist_item_line" />
+
+    <com.rey.material.widget.Button
+        android:id="@+id/bt_login"
+        style="@style/login_regist"
+        android:text="注册" />
+
+</LinearLayout>

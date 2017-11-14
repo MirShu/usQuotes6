@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+    <!--
+    	说明：
+
+    	1、表格中的第一项
+    		<ShareSDK
+        		AppKey="api20" />
+    	是必须的，其中的AppKey是您在ShareSDK上注册的开发者帐号的AppKey
+
+    	2、所有集成到您项目的平台都应该为其在表格中填写相对应的开发者信息，以新浪微博为例：
+    	    <SinaWeibo
+                Id="1"
+                SortId="1"
+                AppKey="568898243"
+                AppSecret="38a4f8204cc784f81f9f0daaf31e02e3"
+                RedirectUrl="http://www.mob.com"
+                Enable="true" />
+    	其中的SortId是此平台在分享列表中的位置，由开发者自行定义，可以是任何整型数字，数值越大
+    	越靠后AppKey、AppSecret和RedirectUrl是您在新浪微博上注册开发者信息和应用后得到的信息
+    	Id是一个保留的识别符，整型，ShareSDK不使用此字段，供您在自己的项目中当作平台的识别符。
+    	Enable字段表示此平台是否有效，布尔值，默认为true，如果Enable为false，即便平台的jar包
+    	已经添加到应用中，平台实例依然不可获取。
+
+    	各个平台注册应用信息的地址如下：
+			新浪微博        http://open.weibo.com
+			测试
+				AppKey="4108136127"
+        AppSecret="0a4ee7d17f2a881c8c9b8c6dd078ded2"
+
+        微博分享
+App Key：1933356400
+App Secret：248180b2b53c3c7b0d03c336f31e32fb
+微博失败
+App Key：4108136127
+App Secret：0a4ee7d17f2a881c8c9b8c6dd078ded2
+			微信好友        http://open.weixin.qq.com
+
+    -->
+
+    <ShareSDK AppKey="1bfcc1743479d" /> <!-- 修改成你在sharesdk后台注册的应用的appkey"-->
+
+    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
+    <SinaWeibo AppKey="1933356400" AppSecret="248180b2b53c3c7b0d03c336f31e32fb" Enable="true" Id="1"
+        RedirectUrl="http://www.sharesdk.cn" ShareByAppClient="true" SortId="1" />
+
+    <TencentWeibo AppKey="801307650" AppSecret="ae36f4ee3946e1cbb98d6965b0b2ff5c" Enable="true" Id="2"
+        RedirectUri="http://sharesdk.cn" SortId="2" />
+
+    <QZone AppId="1105957047" AppKey="vM5QIkgsOrpUPWBU" Enable="true" Id="3" SortId="3" />
+
+    <!--
+    	<WechatFavorite
+id:wx349b2217438de459
+key:e2dde3a3568a531a42dbe566e60a4ac0
+    	Wechat微信和WechatMoments微信朋友圈的appid是一样的；
+
+    	量子财经001
+		id:wx690e58d93634af0d
+    	key:b3026239aa8fa571a933c389d72067d1
+
+		兰森金融
+		id:wx349b2217438de459
+		key:417a396593c519d1808ee2ed92747dd1
+
+		量子财经
+		id:wx9d071202a04d52ed
+		key:aa6d2fccf9e0d26cf25c435cf9a57318
+                       注意：开发者不能用我们这两个平台的appid,否则分享不了
+
+       	  微信测试的时候，微信测试需要先签名打包出apk,
+		sample测试微信，要先签名打包，keystore在sample项目中，密码123456
+
+		BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过
+		审核的应用也可以执行分享，但是仅限于分享文字和图片，不能分享其他类型，
+		默认值为false。此外，微信收藏不支持此字段。
+	-->
+    <Wechat AppId="wx9d071202a04d52ed" AppSecret="aa6d2fccf9e0d26cf25c435cf9a57318" BypassApproval="false"
+        Enable="true" Id="4" SortId="4" />
+
+    <WechatMoments AppId="wx9d071202a04d52ed" AppSecret="aa6d2fccf9e0d26cf25c435cf9a57318" BypassApproval="false"
+        Enable="true" Id="5" SortId="5" />
+
+    <WechatFavorite AppId="wx9d071202a04d52ed" AppSecret="aa6d2fccf9e0d26cf25c435cf9a57318" Enable="true"
+        Id="6" SortId="6" />
+
+    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
+    <QQ AppId="1105957047" AppKey="vM5QIkgsOrpUPWBU" Enable="true" Id="7" ShareByAppClient="true"
+        SortId="7" />
+</DevInfor>

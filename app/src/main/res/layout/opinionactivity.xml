@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lanson="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_333333"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:paddingLeft="30px"
+            android:src="@mipmap/icon_m_back" />
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_line" />
+
+    <LinearLayout style="@style/style_cannot_detailed_ll"
+        android:layout_height="30dp"
+        >
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_marginTop="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            style="@style/style_cannot_detailed_ed" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/style_cannot_detailed_ll"
+        android:layout_marginTop="7dp"
+        android:layout_height="30dp"
+        >
+
+        <EditText
+            android:id="@+id/ed_address"
+            android:layout_marginTop="0dp"
+            android:layout_height="30dp"
+            android:hint="联系方式"
+            android:gravity="center_vertical"
+            style="@style/style_cannot_detailed_ed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        style="@style/style_cannot_detailed_ll">
+
+        <EditText
+            android:id="@+id/ed_detailed"
+            android:paddingBottom="130dp"
+            style="@style/style_cannot_detailed_ed" />
+    </LinearLayout>
+
+
+    <com.rey.material.widget.TextView
+        android:id="@+id/submit"
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_start_button"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="提交"
+        android:textColor="@android:color/white"
+        lanson:rd_cornerRadius="5dp" />
+</LinearLayout>

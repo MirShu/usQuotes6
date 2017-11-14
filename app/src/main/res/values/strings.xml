@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">美股行情软件</string>
+    <string name="navigation_navigation_bar">NavigationBar</string>
+    <string name="navigation_tab_host">TabHost</string>
+
+    <string name="mnPlayerNoNetHint">当前网络不可用,检查网络设置</string>
+    <string name="mnPlayerUrlEmptyHint">播放地址为空</string>
+    <string name="mnPlayerPlayFailHint">视频播放失败</string>
+    <string name="mnPlayerMobileNetHint">请注意,当前网络状态切换为3G/4G网络</string>
+
+    <string name="item_home">首页</string>
+    <string name="item_location">自选</string>
+    <string name="item_like">直播</string>
+    <string name="item_person">我</string>
+    <string name="tv_statement">声明：本站行情数据均来源网络，不构成任何交易建议，基于本站数据进行交易导致损失，我方概不负责。</string>
+
+    <string name="tv_input_phone">请输入手机号</string>
+    <string name="tv_input_phone_erro">请输入正确的手机号</string>
+    <string name="tv_login">登陆</string>
+    <string name="tv_cannot_login">无法登陆</string>
+    <string name="tv_code_success">短信发送成功</string>
+    <string name="tv_code_error">验证码错误或已过期</string>
+    <string name="tv_get_code_error">获取验证码失败</string>
+    <string name="tv_login_success">登录成功</string>
+    <string name="tv_correct_phone_number">请输入有效的手机号或者验证码</string>
+
+    <string name="user_from">360企业版</string>
+    <string name="appNumber">6</string>
+
+</resources>
